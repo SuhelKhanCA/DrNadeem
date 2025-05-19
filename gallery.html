@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dr. Mohammad Nadeem - Event Gallery</title>
+    <title>Dr. Mohammad Nadeem - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -11,32 +11,23 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body style="background-color: var(--bg-color); color: var(--text-color)">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg fixed w-full z-50">
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center py-4">
           <div class="flex items-center space-x-8">
-            <a href="index.html" class="text-xl font-bold brand-color"
-              >Dr. MN</a
-            >
+            <a href="index.html" class="text-xl font-bold brand-color">Dr. MN</a>
             <div class="hidden md:flex space-x-6">
-              <a href="index.html#about" class="text-gray-700 link-hover"
-                >About</a
-              >
-              <a href="index.html#research" class="text-gray-700 link-hover"
-                >Research</a
-              >
-              <a href="index.html#publications" class="text-gray-700 link-hover"
-                >Publications</a
-              >
-              <a href="gallery.html" class="text-gray-700 link-hover"
-                >Gallery</a
-              >
+              <a href="index.html#about" class="text-gray-700 link-hover">About</a>
+              <a href="index.html#education" class="text-gray-700 link-hover">Education</a>
+              <a href="index.html#experience" class="text-gray-700 link-hover">Experience</a>
+              <a href="index.html#research" class="text-gray-700 link-hover">Research</a>
+              <a href="index.html#publications" class="text-gray-700 link-hover">Publications</a>
+              <a href="index.html#contact" class="text-gray-700 link-hover">Contact</a>
+              <a href="gallery.html" class="text-gray-700 link-hover">Gallery</a>
               <a href="css.html" class="text-gray-700 link-hover">CSS</a>
-              <a href="index.html#contact" class="text-gray-700 link-hover"
-                >Contact</a
-              >
+              <a href="other.html" class="text-gray-700 link-hover">Others</a>
             </div>
           </div>
           <button
@@ -48,36 +39,15 @@
         </div>
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden pb-4">
-          <a
-            href="index.html#about"
-            class="block py-2 text-gray-700 hover:text-blue-600"
-            >About</a
-          >
-          <a
-            href="index.html#research"
-            class="block py-2 text-gray-700 hover:text-blue-600"
-            >Research</a
-          >
-          <a
-            href="index.html#publications"
-            class="block py-2 text-gray-700 hover:text-blue-600"
-            >Publications</a
-          >
-          <a
-            href="gallery.html"
-            class="block py-2 text-gray-700 hover:text-blue-600"
-            >Gallery</a
-          >
-          <a
-            href="css.html"
-            class="block py-2 text-gray-700 hover:text-blue-600"
-            >CSS</a
-          >
-          <a
-            href="index.html#contact"
-            class="block py-2 text-gray-700 hover:text-blue-600"
-            >Contact</a
-          >
+          <a href="index.html#about" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+          <a href="index.html#education" class="block py-2 text-gray-700 hover:text-blue-600">Education</a>
+          <a href="index.html#experience" class="block py-2 text-gray-700 hover:text-blue-600">Experience</a>
+          <a href="index.html#research" class="block py-2 text-gray-700 hover:text-blue-600">Research</a>
+          <a href="index.html#publications" class="block py-2 text-gray-700 hover:text-blue-600">Publications</a>
+          <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+          <a href="gallery.html" class="block py-2 text-gray-700 hover:text-blue-600">Gallery</a>
+          <a href="css.html" class="block py-2 text-gray-700 hover:text-blue-600">CSS</a>
+          <a href="other.html" class="block py-2 text-gray-700 hover:text-blue-600">Others</a>
         </div>
       </div>
     </nav>
@@ -91,156 +61,69 @@
         </p>
       </div>
     </header>
-
-    <!-- Carousel Section -->
-    <section class="py-16">
-      <div class="container mx-auto px-4 max-w-6xl">
-        <div class="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item">
-              <img
-                src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg"
-                alt="Academic Conference"
-                class="w-full h-[500px] object-cover"
-              />
-              <div class="carousel-caption">
-                <h3 class="text-xl font-bold">
-                  International Research Symposium
-                </h3>
-                <p>
-                  Discussing future trends in computer science and technology
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
-                alt="Workshop Session"
-                class="w-full h-[500px] object-cover"
-              />
-              <div class="carousel-caption">
-                <h3 class="text-xl font-bold">Research Workshop 2025</h3>
-                <p>Collaborative session on emerging technologies</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg"
-                alt="Guest Lecture"
-                class="w-full h-[500px] object-cover"
-              />
-              <div class="carousel-caption">
-                <h3 class="text-xl font-bold">Distinguished Lecture Series</h3>
-                <p>Special lecture on advanced computing paradigms</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-controls">
-            <button class="carousel-control prev" onclick="moveCarousel(-1)">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-control next" onclick="moveCarousel(1)">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Gallery Grid -->
     <section class="py-16 bg-gray-50">
       <div class="container mx-auto px-4 max-w-6xl">
-        <h2 class="text-3xl font-bold mb-8 text-center">Recent Events</h2>
-        <div class="gallery-grid">
-          <div
-            class="custom-card card-border gallery-item"
-            onclick="openModal('symposium')"
-          >
+        <h2 class="text-3xl font-bold mb-8 text-center">16th International Mineral Processing Symposium</h2>
+        <p class="text-xl text-center mb-12 text-gray-600">Belek-Antalya, Turkey | October 23-25, 2018</p>
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div class="custom-card card-border">
             <img
-              src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg"
-              alt="Research Symposium"
-              class="w-full h-48 object-cover rounded mb-4"
+              src="images/presenting_img .jpg"
+              alt="Dr. Nadeem presenting at IMPS 2018"
+              class="w-full h-96 object-cover rounded-t-lg"
             />
-            <h3 class="text-xl font-semibold mb-2 brand-color">
-              International Research Symposium
-            </h3>
-            <p class="text-gray-600">
-              Leading researchers gathered to discuss breakthrough technologies
-              and future directions in computer science.
-            </p>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 brand-color">Research Presentation</h3>
+              <p class="text-gray-600">
+                Presenting research on "Intelligent Techniques Based Model for Fine Particle Enlargement Process" at the symposium.
+                Co-authored with Haider Banka and R. Venugopal from IIT(ISM), Dhanbad.
+              </p>
+            </div>
           </div>
 
-          <div
-            class="custom-card card-border gallery-item"
-            onclick="openModal('workshop')"
-          >
+          <div class="custom-card card-border">
             <img
-              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
-              alt="Research Workshop"
-              class="w-full h-48 object-cover rounded mb-4"
+              src="images/group_img.jpg"
+              alt="Group photo at IMPS 2018"
+              class="w-full h-96 object-cover rounded-t-lg"
             />
-            <h3 class="text-xl font-semibold mb-2 brand-color">
-              Research Workshop 2025
-            </h3>
-            <p class="text-gray-600">
-              Hands-on workshop focusing on practical applications of emerging
-              technologies.
-            </p>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 brand-color">Conference Networking</h3>
+              <p class="text-gray-600">
+                Engaging with fellow researchers and industry professionals during the symposium, fostering international collaborations in mineral processing research.
+              </p>
+            </div>
           </div>
+        </div>
 
-          <div
-            class="custom-card card-border gallery-item"
-            onclick="openModal('lecture')"
-          >
-            <img
-              src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg"
-              alt="Distinguished Lecture"
-              class="w-full h-48 object-cover rounded mb-4"
-            />
-            <h3 class="text-xl font-semibold mb-2 brand-color">
-              Distinguished Lecture Series
-            </h3>
+        <div class="custom-card card-border">
+          <img
+            src="images/receive_img.jpg"
+            alt="Receiving certificate at IMPS 2018"
+            class="w-full h-[500px] object-cover rounded-t-lg"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 brand-color">Award Recognition</h3>
             <p class="text-gray-600">
-              Special guest lecture on advanced computing paradigms and their
-              impact on future research.
+              Receiving recognition for the research presentation at the 16th International Mineral Processing Symposium. 
+              This participation was supported by a SERB-DST travel grant, acknowledging the significance of the research work.
             </p>
           </div>
+        </div>
 
-          <div
-            class="custom-card card-border gallery-item"
-            onclick="openModal('seminar')"
-          >
-            <img
-              src="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg"
-              alt="Research Seminar"
-              class="w-full h-48 object-cover rounded mb-4"
-            />
-            <h3 class="text-xl font-semibold mb-2 brand-color">
-              Research Seminar
-            </h3>
-            <p class="text-gray-600">
-              Interactive seminar session discussing latest developments in the
-              field.
-            </p>
-          </div>
-
-          <div
-            class="custom-card card-border gallery-item"
-            onclick="openModal('conference')"
-          >
-            <img
-              src="https://images.pexels.com/photos/1708912/pexels-photo-1708912.jpeg"
-              alt="Academic Conference"
-              class="w-full h-48 object-cover rounded mb-4"
-            />
-            <h3 class="text-xl font-semibold mb-2 brand-color">
-              Academic Conference 2025
-            </h3>
-            <p class="text-gray-600">
-              Annual conference bringing together researchers from around the
-              world.
-            </p>
-          </div>
+        <div class="mt-12 custom-card card-border p-6">
+          <h3 class="text-xl font-semibold mb-4 brand-color">About the Symposium</h3>
+          <p class="text-gray-600 mb-4">
+            The 16th International Mineral Processing Symposium (IMPS 2018) was held at ODTÜ METU in Belek-Antalya, Turkey. 
+            The symposium brought together industry professionals and academics to discuss innovations and promote collaborations 
+            within the mineral processing industry.
+          </p>
+          <p class="text-gray-600">
+            The event featured presentations on cutting-edge research, technological advancements, and sustainable practices 
+            in mineral processing, providing a platform for knowledge exchange and networking among international experts in the field.
+          </p>
         </div>
       </div>
     </section>
@@ -294,22 +177,7 @@
         const menu = document.getElementById("mobile-menu");
         menu.classList.toggle("hidden");
       }
-
-      // Carousel functionality
-      let currentSlide = 0;
-      const slides = document.querySelectorAll(".carousel-item");
-
-      function moveCarousel(direction) {
-        currentSlide =
-          (currentSlide + direction + slides.length) % slides.length;
-        updateCarousel();
-      }
-
-      function updateCarousel() {
-        const carousel = document.querySelector(".carousel-inner");
-        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-      }
-
+      
       // Modal functionality
       function openModal(eventId) {
         const modal = document.getElementById("eventModal");
@@ -410,5 +278,44 @@
         }
       };
     </script>
+
+    <style>
+      .gallery-grid {
+        margin-bottom: 2rem;
+      }
+      .gallery-item {
+        transition: transform 0.3s ease;
+      }
+      .gallery-item:hover {
+        transform: translateY(-5px);
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.9);
+      }
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        width: 90%;
+        max-width: 1200px;
+        border-radius: 8px;
+      }
+      .modal-close {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
   </body>
 </html>
