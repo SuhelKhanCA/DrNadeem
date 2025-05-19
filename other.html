@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Mohammad Nadeem - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="background-color: var(--bg-color); color: var(--text-color)">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center space-x-8">
+            <a href="index.html" class="text-xl font-bold brand-color">Dr. MN</a>
+            <div class="hidden md:flex space-x-6">
+              <a href="index.html#about" class="text-gray-700 link-hover">About</a>
+              <a href="index.html#education" class="text-gray-700 link-hover">Education</a>
+              <a href="index.html#experience" class="text-gray-700 link-hover">Experience</a>
+              <a href="index.html#research" class="text-gray-700 link-hover">Research</a>
+              <a href="index.html#publications" class="text-gray-700 link-hover">Publications</a>
+              <a href="index.html#contact" class="text-gray-700 link-hover">Contact</a>
+              <a href="gallery.html" class="text-gray-700 link-hover">Gallery</a>
+              <a href="css.html" class="text-gray-700 link-hover">CSS</a>
+              <a href="other.html" class="text-gray-700 link-hover">Others</a>
+            </div>
+          </div>
+          <button
+            class="md:hidden text-gray-700 hover:text-blue-600"
+            onclick="toggleMenu()"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+          <a href="index.html#about" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+          <a href="index.html#education" class="block py-2 text-gray-700 hover:text-blue-600">Education</a>
+          <a href="index.html#experience" class="block py-2 text-gray-700 hover:text-blue-600">Experience</a>
+          <a href="index.html#research" class="block py-2 text-gray-700 hover:text-blue-600">Research</a>
+          <a href="index.html#publications" class="block py-2 text-gray-700 hover:text-blue-600">Publications</a>
+          <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+          <a href="gallery.html" class="block py-2 text-gray-700 hover:text-blue-600">Gallery</a>
+          <a href="css.html" class="block py-2 text-gray-700 hover:text-blue-600">CSS</a>
+          <a href="other.html" class="block py-2 text-gray-700 hover:text-blue-600">Others</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Header Section -->
+    <header class="pt-24 pb-12 text-white custom-gradient">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Dr. Mohammad Nadeem</h1>
+        <p class="text-xl md:text-2xl opacity-90">
+          Assistant Professor, Aligarh Muslim University
+        </p>
+      </div>
+    </header>
+
+    <!-- Other Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <h2 class="text-3xl font-bold mb-8 text-center">Other Roles & Activities</h2>
+        
+        <!-- MOOC Course -->
+        <div class="custom-card card-border mb-8">
+          <div class="flex items-start space-x-4">
+            <div class="text-4xl brand-color">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2 brand-color">MOOC Course Development</h3>
+              <p class="mb-2">Developed 12-week course on "Data Science using Python" for SWAYAM (Indian MOOC)</p>
+              <a href="https://onlinecourses.swayam2.ac.in/ini24_cs02/preview" 
+                 target="_blank" 
+                 rel="noopener" 
+                 class="brand-color hover:text-green-800 flex items-center">
+                <i class="fas fa-external-link-alt mr-2"></i>
+                View Course on SWAYAM
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Centre Membership -->
+        <div class="custom-card card-border mb-8">
+          <div class="flex items-start space-x-4">
+            <div class="text-4xl brand-color">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2 brand-color">Member, Interdisciplinary Centre of AI</h3>
+              <p class="mb-2">Associated with Interdisciplinary Centre of Artificial Intelligence, AMU, Aligarh.</p>
+              <a href="https://www.amu.ac.in/centres/interdisciplinary-centre-of-artificial-intelligence/staff-members" 
+                 target="_blank" 
+                 rel="noopener" 
+                 class="brand-color hover:text-green-800 flex items-center">
+                <i class="fas fa-external-link-alt mr-2"></i>
+                View Centre Website
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS Convener -->
+        <div class="custom-card card-border mb-8">
+          <div class="flex items-start space-x-4">
+            <div class="text-4xl brand-color">
+              <i class="fas fa-users"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2 brand-color">Convener, Computer Science Society (CSS)</h3>
+              <p class="mb-2">Conducting events/workshops/seminars to promote and spread computer science related skills and knowledge under the banner of Computer Science Society (CSS).</p>
+              <a href="https://amu.ac.in/miscellaneous/computer-science-society" 
+                 target="_blank" 
+                 rel="noopener" 
+                 class="brand-color hover:text-green-800 flex items-center">
+                <i class="fas fa-external-link-alt mr-2"></i>
+                Learn More about CSS
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Training and Placement -->
+        <div class="custom-card card-border">
+          <div class="flex items-start space-x-4">
+            <div class="text-4xl brand-color">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2 brand-color">Training and Placement Officer</h3>
+              <p class="mb-2">Coordinating with the companies, conducting placement drives, managing and looking after the whole recruitment process.</p>
+              <a href="https://www.amu.ac.in/training-and-placement/tnp-computer-science" 
+                 target="_blank" 
+                 rel="noopener" 
+                 class="brand-color hover:text-green-800 flex items-center">
+                <i class="fas fa-external-link-alt mr-2"></i>
+                Visit Training & Placement Portal
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="custom-gradient text-white py-8">
+      <div class="container mx-auto px-4 text-center">
+        <div class="flex justify-center space-x-6 mb-4">
+          <a
+            href="https://www.researchgate.net/profile/Mohammad-Nadeem-9"
+            target="_blank"
+            rel="noopener"
+            class="link-hover"
+            title="Visit ResearchGate Profile"
+            ><i class="fab fa-researchgate text-2xl"></i
+          ></a>
+          <a
+            href="https://www.amu.ac.in/faculty/computer-science/mohammad-nadeem"
+            target="_blank"
+            rel="noopener"
+            class="link-hover"
+            title="Visit AMU Profile"
+            ><i class="fas fa-university text-2xl"></i
+          ></a>
+          <a
+            href="https://scholar.google.co.in/citations?user=yaEgXYMAAAAJ&hl=en"
+            target="_blank"
+            rel="noopener"
+            class="link-hover"
+            title="Visit Google Scholar Profile"
+            ><i class="fas fa-graduation-cap text-2xl"></i
+          ></a>
+        </div>
+        <p>&copy; 2025 Dr. Mohammad Nadeem. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
